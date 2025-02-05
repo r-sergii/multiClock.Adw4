@@ -31,7 +31,8 @@
             "sources" : [
                 {
                     "type" : "git",
-                    "url" : "file:///home/serhii/Проєкти/multiclock"
+                    "url" : "https://github.com/multiApps-inf-ua/multiClock.Adw4.git",
+                    "tag" : "0.1.0"
                 }
             ]
         }
