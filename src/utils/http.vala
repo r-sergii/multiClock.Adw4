@@ -1,8 +1,3 @@
-/*---------------------------------------------------------------------------------------------
- *  Copyright (c) 2022 Emre ÖZÇAKIR  
- *  Licensed under the MIT License. See License file in the project root for more information.
- *-------------------------------------------------------------------------------------------*/
-
 namespace Http {
 
     using Gee;

@@ -1,21 +1,3 @@
-/* application.vala
- *
- * Copyright 2024 r-sergii
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
-
 //xgettext --files-from=po/POTFILES --from-code=UTF-8 --output po/multiclock.pot
 
 namespace Multiclock {
@@ -146,13 +128,6 @@ namespace Multiclock {
             provider.load_from_resource ("/ua/multiapps/multiClock/theme_switcher.css");
             Gtk.StyleContext.add_provider_for_display (Gdk.Display.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_USER);
 
-            // GLib settings
-//            var settings = new GLib.Settings ("org.hitchhiker_linux.vapad");
-  //          settings.bind ("vimode", win, "vimode", GLib.SettingsBindFlags.DEFAULT);
-    //        settings.bind ("grid", win, "display_grid", GLib.SettingsBindFlags.DEFAULT);
-      //      settings.bind ("syntax", win, "editor_theme", GLib.SettingsBindFlags.DEFAULT);
-        //    settings.bind ("font", win, "editor_font", GLib.SettingsBindFlags.DEFAULT);
-          //  settings.bind ("theme", this, "theme", GLib.SettingsBindFlags.DEFAULT);
             return win;
         }
 

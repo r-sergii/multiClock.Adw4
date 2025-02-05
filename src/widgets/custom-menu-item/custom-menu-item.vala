@@ -14,7 +14,6 @@ namespace MyLib {
 
         construct {
             this.set_layout_manager (new Gtk.BinLayout ());
-//            clickbutton.add_css_class("light");
         }
 
         public Gtk.Button button {

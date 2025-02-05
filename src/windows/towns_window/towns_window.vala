@@ -1,21 +1,3 @@
-/* towns_window.vala
- *
- * Copyright 2024 r-sergii
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
-
 namespace Multiclock {
 	[GtkTemplate (ui = "/ua/multiapps/multiClock/windows/towns_window/towns_window.ui")]
 	public class TownsWindow : Adw.PreferencesWindow {//Adw.ApplicationWindow {
@@ -67,20 +49,8 @@ namespace Multiclock {
 			Object ();//application: app);
             button_ok.clicked.connect(on_ok);
             button_cancel.clicked.connect(on_cancel);
-//            directory_path = Environment.get_home_dir()+"/.local/share/applications";
-  //          GLib.File file = GLib.File.new_for_path(directory_path);
-    //        if(!file.query_exists()){
-      //          alert(_("Error!\nPath: %s does not exist!\nThe program will not be able to perform its functions.").printf(directory_path), "");
-        //        button_create.set_sensitive(false);
-          //      button_open.set_sensitive(false);
-            //}
-
-//            if (Config.DEVELOPMENT) {
-  //              add_css_class ("devel");
-    //        }
 
             init ();
-//            vert = _vert;
 
             var app = GLib.Application.get_default();
             var theme = (app as Multiclock.Application).theme;

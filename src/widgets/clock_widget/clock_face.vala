@@ -28,12 +28,8 @@ namespace Multiclock {
 
         public signal void time_changed (int hour, int minute);
 
-//        public ClockFace (string __town, string __country, string __svg)
         public ClockFace (Multiclock.ClockModel model, string __svg)
             {
-//            add_events (Gdk.EventMask.BUTTON_PRESS_MASK
-  //                    | Gdk.EventMask.BUTTON_RELEASE_MASK
-        //                  | Gdk.EventMask.POINTER_MOTION_MASK);
             _town = model.town;
             _country = model.country;
             _hour = model.hour;
@@ -186,48 +182,7 @@ namespace Multiclock {
     //        cr.fill();
 
         }
-/*
-        public override bool button_press_event (Gdk.EventButton event) {
-            var minutes = this.time.minute + this.minute_offset;
 
-            // From
-            // http://mathworld.wolfram.com/Point-LineDistance2-Dimensional.html
-            var px = event.x - get_allocated_width () / 2;
-            var py = get_allocated_height () / 2 - event.y;
-            var lx = Math.sin (Math.PI / 30 * minutes);
-            var ly = Math.cos (Math.PI / 30 * minutes);
-            var u = lx * px + ly * py;
-
-            // on opposite side of origin
-            if (u < 0) {
-                return false;
-            }
-
-            var d2 = Math.pow (px - u * lx, 2) + Math.pow (py - u * ly, 2);
-
-            if (d2 < 25) {      // 5 pixels away from the line
-                this.dragging = true;
-                print ("got minute hand\n");
-            }
-
-            return false;
-        }
-
-        public override bool button_release_event (Gdk.EventButton event) {
-            if (this.dragging) {
-                this.dragging = false;
-                emit_time_changed_signal ((int) event.x, (int) event.y);
-            }
-            return false;
-        }
-
-        public override bool motion_notify_event (Gdk.EventMotion event) {
-            if (this.dragging) {
-                emit_time_changed_signal ((int) event.x, (int) event.y);
-            }
-            return false;
-        }
-*/
         private void emit_time_changed_signal (int x, int y) {
             // decode the minute hand
             // normalise the coordinates around the origin
@@ -256,6 +211,7 @@ namespace Multiclock {
             // simple method
 //            this.time = Time.local (time_t ());
   //          this.time.hour = int.parse(_hour);
+
             // correcting method for longli use
 //            message (hourDifference.to_string ());
             var dateNow = new GLib.DateTime.now ();
@@ -270,16 +226,6 @@ namespace Multiclock {
         }
 
         private void redraw_canvas () {
-//            var window = get_window ();
-  //          if (null == window) {
-    //            return;
-      //      }
-
-//            var region = window.get_clip_region ();
-            // redraw the cairo canvas completely by exposing it
-  //          window.invalidate_region (region, true);
-    //        window.process_updates (true);
-     //       style_context_invalidate();
             queue_draw ();
         }
 

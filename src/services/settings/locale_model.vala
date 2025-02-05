@@ -63,8 +63,6 @@ namespace Multiclock {
             make_connect = "Make%20the%20connection%20and%20try%20again";
             exit_ = "Exit?";
             are_exit = "Are%20you%20sure%20you%20want%20to%20exit?";
-//            are_exit = "Are" + "%20" + "you" + "%20" +"sure" + "%20" + "you" + "%20"
-  //              + "want" + "%20" + "to" + "%20" + "exit?";
         }
 
         public void reinit () {

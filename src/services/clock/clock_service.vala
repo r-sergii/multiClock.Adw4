@@ -4,10 +4,8 @@ namespace Multiclock {
 
     public class ClockService {
         public Gee.ArrayList<ClockModel> listClocks;
-//        public Gee.ArrayList<XPMModel> listXpms;
         public Gtk.StringList listSvgs;
         public Gee.ArrayList<bool> listVisible;
-        //public bool listVisible[Multiclock.COUNT_TOWN];
 
         public ClockService() {
             listClocks = new Gee.ArrayList<ClockModel> ();

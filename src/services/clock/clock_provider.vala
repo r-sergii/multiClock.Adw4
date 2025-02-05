@@ -2,8 +2,6 @@ namespace Multiclock {
 
     class ClockProvider {
         const string baseUrl = "https://multiapps-seven.vercel.app/api/clock/";
-        //const string baseUrl //= "www.google.com";
-        //= "script.google.com/macros/s/AKfycbz2pKuXRKAEftKPpy62y4qSnkuPTkvI7JUj_-EZG9TfjgZ-zpc1mDLc-7ZN1mM4YnawvQ/exec?app=mclock&route=clock";
 
         Http.Client http;
 

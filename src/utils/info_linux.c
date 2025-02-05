@@ -10,10 +10,8 @@ const int SIZETECH = 8192;
 char* get_name_os_linux()
 {
   FILE *fp;
-//  char buffer[50] = " ";
   char* buffer = malloc(SIZEOS);
   fp = popen("lsb_release -ds", "r");
-//  fp = popen("cat /etc/*-release", "r");
   fgets(buffer, SIZEOS, fp);
   pclose(fp);
   printf("%ld\n", strlen(buffer));

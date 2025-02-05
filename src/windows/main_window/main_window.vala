@@ -1,35 +1,13 @@
-/* main_window.vala
- *
- * Copyright 2024 r-sergii
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
-
 using Gtk;
 
 namespace Multiclock {
     [GtkTemplate (ui = "/ua/multiapps/multiClock/windows/main_window/main_window.ui")]
     public class MainWindow : Gtk.ApplicationWindow {
         [GtkChild]
-//        private unowned Gtk.Label label;
         private unowned Gtk.Box mainBox;//list;
-//        private unowned Gtk.Container container;
         private MyLib.ThemeSwitcher theme_switcher;
         [GtkChild]
         private unowned Gtk.MenuButton menu_button;
-//        [GtkChild]
-//        private unowned Gtk.MenuItem item_lang;
 
         private Multiclock.VertBigView vertBigView;
         private Multiclock.HorizBigView horizBigView;
@@ -98,33 +76,12 @@ namespace Multiclock {
 
             init_menu ();
 
-//            var menuModel = pop.menu_model;
-            //var item_preferences = new GLib.MenuItem (_("Preferences"), "app.preferences");
-            //menu.append_item (item_preferences);
-
-//            var clockService = new ClockService ();
-  //          clockService.getItems ();
-
-//            var scroll = new Gtk.ScrolledWindow () {
-  //              propagate_natural_height = true,
-    //            propagate_natural_width = true
-      //      };
-
             //Gtk.ScrolledWindow
             scroll = new Gtk.ScrolledWindow ();//null, null);
-	            scroll.set_policy (Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.AUTOMATIC);
-                scroll.set_vexpand(true);
-                scroll.set_hexpand(true);
-/*
-//            scroll.set_policy (Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.AUTOMATIC);
-            //            this.init_style_menu (pop);
-            var list = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 1);
-            //list.set_orientation (Gtk.Orientation.VERTICAL);
-            list.append (new ClockWidget(300,300));
-            list.append (new ClockFace());
-            list.append (new ClockFace());
-            list.append (new Gtk.Label("Clock"));
-*/
+            scroll.set_policy (Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.AUTOMATIC);
+            scroll.set_vexpand(true);
+            scroll.set_hexpand(true);
+
             vertBigView = new VertBigView ();
             horizBigView = new HorizBigView ();
             var app = GLib.Application.get_default();
@@ -132,19 +89,9 @@ namespace Multiclock {
             (app as Multiclock.Application).vertBigView = vertBigView;
             (app as Multiclock.Application).horizBigView = horizBigView;
 
-            //scroll.set_child (list);
             applyView ();
-            //container.set_child (list);
             mainBox.append (scroll);
 
-            // Setup property action on_quit
-//            var on_quit = new PropertyAction ("on_quit", this, "on_quit");
-  //          on_quit.notify.connect (this.on_close_application);
-    //        this.add_action (on_quit);
-//            var quit_action = new GLib.SimpleAction ("quit", null);
-  //          quit_action.activate.connect(()=>{
-    //            on_close_application();
-      //      });
             applyLocale ();
         }
 
@@ -175,8 +122,6 @@ namespace Multiclock {
                     print(@"window height: $value\n");
                     return Source.REMOVE;
                 });
-//                grid.set_size_request (get_width (), get_height ());
-  //              grid.queue_draw ();
                 if ((windowHeight >= windowWidth) && (isVert != true)) {
                     applyView ();
                 }
@@ -248,14 +193,6 @@ namespace Multiclock {
 
             var pop = (Gtk.PopoverMenu) this.menu_button.get_popover ();
             pop.hide ();
-//            lang2.pref = "Мова";
-  //          lang2.suf = "Ua";
-    //        town2.pref = "Міста";
-
-//            var app = GLib.Application.get_default();
-  //          var locale = (app as Multiclock.Application).settingsService.locale;
-    //        message ("Callback");
-      //      message (locale.choose_cities);
         }
 
         private void on_towns_action () {
