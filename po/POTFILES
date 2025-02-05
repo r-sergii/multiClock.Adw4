@@ -1,0 +1,12 @@
+data/ua.multiapps.multiClock.desktop.in
+data/ua.multiapps.multiClock.appdata.xml.in
+data/ua.multiapps.multiClock.gschema.xml
+src/windows/main_window/main_window.ui
+src/main.vala
+src/windows/main_window/main_window.vala
+src/windows/towns_window/towns_window.ui
+src/windows/towns_window/towns_window.vala
+src/windows/language_window/language_window.ui
+src/windows/language_window/language_window.vala
+
+
