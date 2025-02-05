@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <template class="MyLibCustomMenuItem" parent="GtkWidget">
+    <style>
+      <class name="custommenuitem"/>
+    </style>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">horizontal</property>
+        <property name="halign">fill</property>
+        <property name="hexpand">true</property>
+        <property name="margin-top">1</property>
+        <property name="margin-bottom">1</property>
+        <property name="margin-start">1</property>
+        <property name="margin-end">1</property>
+        <child>
+          <object class="GtkButton" id="clickbutton">
+            <property name="halign">fill</property>
+            <property name="hexpand">true</property>
+            <child>
+              <object class="GtkBox">
+                <property name="orientation">horizontal</property>
+                <property name="halign">fill</property>
+                <property name="hexpand">true</property>
+                <property name="spacing">70</property>
+                <child>
+                  <object class="GtkLabel" id="prefix">
+                  <property name="label">Language</property>
+                  <attributes>
+                    <attribute name="weight" value="normal"/>
+                    <attribute name="scale" value="1"/>
+                  </attributes>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="sufix">
+                    <property name="label">En</property>
+                    <attributes>
+                      <attribute name="weight" value="bold"/>
+                      <attribute name="scale" value="1"/>
+                    </attributes>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <!--
+        <child>
+          <object class="GtkLabel" id="prefix">
+            <property name="label">Language</property>
+            <attributes>
+              <attribute name="weight" value="bold"/>
+              <attribute name="scale" value="1"/>
+            </attributes>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel" id="sufix">
+            <property name="label">En</property>
+            <attributes>
+              <attribute name="weight" value="bold"/>
+              <attribute name="scale" value="1"/>
+            </attributes>
+          </object>
+        </child> -->
+      </object>
+    </child>
+  </template>
+</interface>

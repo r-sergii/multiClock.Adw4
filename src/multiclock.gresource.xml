@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/ua/multiapps/multiClock">
+    <file>windows/main_window/main_window.ui</file>
+    <file>windows/towns_window/towns_window.ui</file>
+    <file>windows/language_window/language_window.ui</file>
+    <file>widgets/theme_switcher/theme_switcher.ui</file>
+    <file alias="theme_switcher.css">widgets/theme_switcher/theme_switcher.css</file>
+    <file>widgets/custom-menu-item/custom-menu-item.ui</file>
+    <file>gtk/help-overlay.ui</file>
+    <file>image/flag_new_zealand.svg</file>
+    <file>image/flag_australia.svg</file>
+    <file>image/flag_japan.svg</file>
+    <file>image/flag_south_korea.svg</file>
+    <file>image/flag_china.svg</file>
+    <file>image/flag_hong_kong.svg</file>
+    <file>image/flag_singapore.svg</file>
+    <file>image/flag_germany.svg</file>
+    <file>image/flag_switzerland.svg</file>
+    <file>image/flag_uk.svg</file>
+    <file>image/flag_canada.svg</file>
+    <file>image/flag_usa.svg</file>
+  </gresource>
+</gresources>

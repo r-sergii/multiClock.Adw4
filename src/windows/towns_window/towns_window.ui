@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+<!--
+  <template class="MulticlockTownsWindow" parent="AdwApplicationWindow">
+    -->
+  <template class="MulticlockTownsWindow" parent="AdwPreferencesWindow">
+    <property name="default-width">480</property>
+    <property name="default-height">640</property>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="AdwHeaderBar" id="header_bar">
+            <property name="css-classes">flat</property>
+            <property name="title-widget">
+              <object class="AdwWindowTitle" id="adw_title">
+                <property name="title" translatable="yes">Choose cities to show</property>
+              </object>
+            </property>
+            <child>
+              <object class="GtkButton" id="button_ok">
+                <property name="child">
+                  <object class="AdwButtonContent" id="adw_button_ok">
+                    <property name="icon-name">ok128</property>
+                    <property name="label" translatable="yes">OK</property>
+                    <property name="tooltip-text" translatable="yes">Apply your selection</property>
+                  </object>
+                </property>
+              </object>
+            </child>
+            <child type="end">
+              <object class="GtkButton" id="button_cancel">
+                <property name="child">
+                  <object class="AdwButtonContent" id="adw_button_cancel">
+                   <property name="icon-name">cancel128</property>
+                   <property name="label" translatable="yes">Close</property>
+                   <property name="tooltip-text" translatable="yes">Undo changes</property>
+                 </object>
+               </property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="AdwToastOverlay" id="overlay">
+          <property name="vexpand">True</property>
+          <property name="child">
+          <object class="GtkScrolledWindow">
+            <property name="propagate_natural_height">True</property>
+            <property name="propagate_natural_width">True</property>
+            <child>
+              <object class="AdwClamp">
+                <property name="tightening-threshold">100</property>
+                <property name="valign">center</property>
+                <property name="margin-top">36</property>
+                <property name="margin-bottom">36</property>
+                <child>
+                  <object class="GtkListBox">
+<!--                        -->
+                    <child>
+                      <object class="AdwActionRow">
+                        <property name="title" translatable="yes">Wellington</property>
+                        <property name="subtitle" translatable="yes">New Zealand</property>
+                        <property name="icon_name" translatable="yes">flag_new_zealand</property>
+                        <property name="selectable">False</property>
+                        <property name="focusable">False</property>
+                        <property name="activatable-widget">switch_wellington</property>
+                        <child>
+                          <object class="GtkSwitch" id="switch_wellington">
+                            <property name="halign">end</property>
+                            <property name="valign">center</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="AdwActionRow">
+                        <property name="title" translatable="yes">Sydney</property>
+                        <property name="subtitle" translatable="yes">Australia</property>
+                        <property name="icon_name" translatable="yes">flag_australia</property>
+                        <property name="selectable">False</property>
+                        <property name="focusable">False</property>
+                        <property name="activatable-widget">switch_sydney</property>
+                        <child>
+                          <object class="GtkSwitch" id="switch_sydney">
+                            <property name="halign">end</property>
+                            <property name="valign">center</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="AdwActionRow">
+                        <property name="title" translatable="yes">Tokio</property>
+                        <property name="subtitle" translatable="yes">Japan</property>
+                        <property name="icon_name" translatable="yes">flag_japan</property>
+                        <property name="selectable">False</property>
+                        <property name="focusable">False</property>
+                        <property name="activatable-widget">switch_tokio</property>
+                        <child>
+                          <object class="GtkSwitch" id="switch_tokio">
+                            <property name="halign">end</property>
+                            <property name="valign">center</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="AdwActionRow">
+                        <property name="title" translatable="yes">Seoul</property>
+                        <property name="subtitle" translatable="yes">South Korea</property>
+                        <property name="icon_name" translatable="yes">flag_south_korea</property>
+                        <property name="selectable">False</property>
+                        <property name="focusable">False</property>
+                        <property name="activatable-widget">switch_seoul</property>
+                        <child>
+                          <object class="GtkSwitch" id="switch_seoul">
+                            <property name="halign">end</property>
+                            <property name="valign">center</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="AdwActionRow">
+                        <property name="title" translatable="yes">Shanghai</property>
+                        <property name="subtitle" translatable="yes">People's Republic of China'</property>
+                        <property name="icon_name" translatable="yes">flag_china</property>
+                        <property name="selectable">False</property>
+                        <property name="focusable">False</property>
+                        <property name="activatable-widget">switch_shanghai</property>
+                        <child>
+                          <object class="GtkSwitch" id="switch_shanghai">
+                            <property name="halign">end</property>
+                            <property name="valign">center</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="AdwActionRow">
+                        <property name="title" translatable="yes">Hong Kong</property>
+                        <property name="subtitle" translatable="yes">Hong Kong</property>
+                        <property name="icon_name" translatable="yes">flag_hong_kong</property>
+                        <property name="selectable">False</property>
+                        <property name="focusable">False</property>
+                        <property name="activatable-widget">switch_hong_kong</property>
+                        <child>
+                          <object class="GtkSwitch" id="switch_hong_kong">
+                            <property name="halign">end</property>
+                            <property name="valign">center</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="AdwActionRow">
+                        <property name="title" translatable="yes">Singapore</property>
+                        <property name="subtitle" translatable="yes">Republic of Singapore</property>
+                        <property name="icon_name" translatable="yes">flag_singapore</property>
+                        <property name="selectable">False</property>
+                        <property name="focusable">False</property>
+                        <property name="activatable-widget">switch_singapore</property>
+                        <child>
+                          <object class="GtkSwitch" id="switch_singapore">
+                            <property name="halign">end</property>
+                            <property name="valign">center</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="AdwActionRow">
+                        <property name="title" translatable="yes">Frankfurt</property>
+                        <property name="subtitle" translatable="yes">Germany</property>
+                        <property name="icon_name" translatable="yes">flag_germany</property>
+                        <property name="selectable">False</property>
+                        <property name="focusable">False</property>
+                        <property name="activatable-widget">switch_frankfurt</property>
+                        <child>
+                          <object class="GtkSwitch" id="switch_frankfurt">
+                            <property name="halign">end</property>
+                            <property name="valign">center</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="AdwActionRow">
+                        <property name="title" translatable="yes">Zurich</property>
+                        <property name="subtitle" translatable="yes">Switzerland</property>
+                        <property name="icon_name" translatable="yes">flag_switzerland</property>
+                        <property name="selectable">False</property>
+                        <property name="focusable">False</property>
+                        <property name="activatable-widget">switch_zurich</property>
+                        <child>
+                          <object class="GtkSwitch" id="switch_zurich">
+                            <property name="halign">end</property>
+                            <property name="valign">center</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="AdwActionRow">
+                        <property name="title" translatable="yes">London</property>
+                        <property name="subtitle" translatable="yes">United Kingdom</property>
+                        <property name="icon_name" translatable="yes">flag_uk</property>
+                        <property name="selectable">False</property>
+                        <property name="focusable">False</property>
+                        <property name="activatable-widget">switch_london</property>
+                        <child>
+                          <object class="GtkSwitch" id="switch_london">
+                            <property name="halign">end</property>
+                            <property name="valign">center</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="AdwActionRow">
+                        <property name="title" translatable="yes">Toronto</property>
+                        <property name="subtitle" translatable="yes">Canada</property>
+                        <property name="icon_name" translatable="yes">flag_canada</property>
+                        <property name="selectable">False</property>
+                        <property name="focusable">False</property>
+                        <property name="activatable-widget">switch_toronto</property>
+                        <child>
+                          <object class="GtkSwitch" id="switch_toronto">
+                            <property name="halign">end</property>
+                            <property name="valign">center</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="AdwActionRow">
+                        <property name="title" translatable="yes">New York</property>
+                        <property name="subtitle" translatable="yes">USA</property>
+                        <property name="icon_name" translatable="yes">flag_usa</property>
+                        <property name="selectable">False</property>
+                        <property name="focusable">False</property>
+                        <property name="activatable-widget">switch_new_york</property>
+                        <child>
+                          <object class="GtkSwitch" id="switch_new_york">
+                            <property name="halign">end</property>
+                            <property name="valign">center</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="AdwActionRow">
+                        <property name="title" translatable="yes">Chicago</property>
+                        <property name="subtitle" translatable="yes">USA</property>
+                        <property name="icon_name" translatable="yes">flag_usa</property>
+                        <property name="selectable">False</property>
+                        <property name="focusable">False</property>
+                        <property name="activatable-widget">switch_chicago</property>
+                        <child>
+                          <object class="GtkSwitch" id="switch_chicago">
+                            <property name="halign">end</property>
+                            <property name="valign">center</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="AdwActionRow">
+                        <property name="title" translatable="yes">San Francisco</property>
+                        <property name="subtitle" translatable="yes">USA</property>
+                        <property name="icon_name" translatable="yes">flag_usa</property>
+                        <property name="selectable">False</property>
+                        <property name="focusable">False</property>
+                        <property name="activatable-widget">switch_san_francisco</property>
+                        <child>
+                          <object class="GtkSwitch" id="switch_san_francisco">
+                            <property name="halign">end</property>
+                            <property name="valign">center</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+
+                   <style>
+                      <class name="boxed-list"/>
+                    </style>
+                  </object>
+                </child>
+              </object>
+            </child>
+           </object>
+          </property>
+         </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>
