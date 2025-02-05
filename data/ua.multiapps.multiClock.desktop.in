@@ -1,11 +1,10 @@
 [Desktop Entry]
-Name=multiClock
-Comment=Time in the world's largest financial centers
+Name=multiclock
 Exec=multiclock
 Icon=ua.multiapps.multiClock
 Terminal=false
 Type=Application
 Categories=GTK;
 StartupNotify=true
-Keywords=Clock;World Cities;
+Keywords=Clock;World Citis;
 X-Purism-FormFactor=Workstation;Mobile;
