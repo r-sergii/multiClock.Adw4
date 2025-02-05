@@ -30,25 +30,25 @@ if desktop_utils.found()
   )
 endif
 
-#appstream_file = i18n.merge_file(
-#  input: 'ua.multiapps.multiClock.appdata.xml.in',
-#  output: 'ua.multiapps.multiClock.appdata.xml',
-##  input: meson.project_name () + '.appdata.xml.in',
-##  output: meson.project_name () + '.appdata.xml',
-#  po_dir: '../po',
-#  install: true,
-#  install_dir: join_paths(get_option('datadir'), 'appdata')
-#)
+appstream_file = i18n.merge_file(
+  input: 'ua.multiapps.multiClock.appdata.xml.in',
+  output: 'ua.multiapps.multiClock.appdata.xml',
+#  input: meson.project_name () + '.appdata.xml.in',
+#  output: meson.project_name () + '.appdata.xml',
+  po_dir: '../po',
+  install: true,
+  install_dir: join_paths(get_option('datadir'), 'appdata')
+)
 
-appstream_util = find_program('appstream-util', required: false)
-if appstream_util.found()
-  test('Validate appstream file',
-    appstream_util,
-    args: ['validate', appstream_file],
-#    args: ['validate', '--no-net', '--explain', appdata_file.full_path()],
-#    workdir: meson.current_build_dir()
-  )
-endif
+#appstream_util = find_program('appstream-util', required: false)
+#if appstream_util.found()
+#  test('Validate appstream file',
+#    appstream_util,
+#    args: ['validate', appstream_file],
+##    args: ['validate', '--no-net', '--explain', appdata_file.full_path()],
+##    workdir: meson.current_build_dir()
+#  )
+#endif
 
 install_data('ua.multiapps.multiClock.gschema.xml',
 #install_data(meson.project_name () + '.gschema.xml',
