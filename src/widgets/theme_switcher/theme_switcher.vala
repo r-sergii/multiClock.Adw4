@@ -1,5 +1,5 @@
 namespace MyLib {
-    [GtkTemplate (ui = "/ua/multiapps/multiClock/widgets/theme_switcher/theme_switcher.ui")]
+    [GtkTemplate (ui = "/ua/inf/multiapps/multiClock/widgets/theme_switcher/theme_switcher.ui")]
     public class ThemeSwitcher : Gtk.Widget {
         [GtkChild]
         private unowned Gtk.CheckButton system_button;

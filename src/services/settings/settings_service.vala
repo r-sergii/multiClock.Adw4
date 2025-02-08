@@ -10,7 +10,7 @@ namespace Multiclock {
 
         public SettingsService() {
             // GLib settings
-            _settings = new GLib.Settings ("ua.multiapps.multiClock");
+            _settings = new GLib.Settings ("ua.inf.multiapps.multiClock");
             _model = new SettingsModel();
             _theme = new ThemeModel();
             _locale = new LocaleModel();

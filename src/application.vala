@@ -14,7 +14,7 @@ namespace Multiclock {
         private MyLib.InfoLinux info;
 
         public Application () {
-            Object (application_id: "ua.multiapps.multiClock", flags: ApplicationFlags.FLAGS_NONE);
+            Object (application_id: "ua.inf.multiapps.multiClock", flags: ApplicationFlags.FLAGS_NONE);
         }
 
         construct {
@@ -48,7 +48,7 @@ namespace Multiclock {
             init_app_theme ();
 
             var provider = new Gtk.CssProvider ();
-            provider.load_from_resource ("/ua/multiapps/multiClock/theme_switcher.css");
+            provider.load_from_resource ("/ua/inf/multiapps/multiClock/theme_switcher.css");
             Gtk.StyleContext.add_provider_for_display (Gdk.Display.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_USER);
 
             var win = this.active_window;
@@ -125,7 +125,7 @@ namespace Multiclock {
 
             // Css settings
             var provider = new Gtk.CssProvider ();
-            provider.load_from_resource ("/ua/multiapps/multiClock/theme_switcher.css");
+            provider.load_from_resource ("/ua/inf/multiapps/multiClock/theme_switcher.css");
             Gtk.StyleContext.add_provider_for_display (Gdk.Display.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_USER);
 
             return win;
@@ -140,7 +140,7 @@ namespace Multiclock {
 
             var win = new Adw.AboutWindow () {
                 application_name = "multiClock",
-                application_icon = "ua.multiapps.multiClock",
+                application_icon = "ua.inf.multiapps.multiClock",
                 version = "0.1.0",
                 copyright = "Copyright © 2025 Serhii Rudchenko",
 //                license_type = License.GPL_3_0,

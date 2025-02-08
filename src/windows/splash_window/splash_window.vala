@@ -7,11 +7,11 @@ namespace Multiclock {
         private CircularProgressWidgets.CircularProgressBar pbar;
 
         public SplashWindow (Gtk.Application app) {
-            Object (application: app);
+            Object (application: app, default_width: 320);
         }
 
         construct{
-            var logo = new Gtk.Image.from_icon_name("ua.multiapps.multiClock") {
+            var logo = new Gtk.Image.from_icon_name("ua.inf.multiapps.multiClock") {
                 pixel_size = 128
             };
 

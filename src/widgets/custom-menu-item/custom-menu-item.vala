@@ -1,5 +1,5 @@
 namespace MyLib {
-    [GtkTemplate (ui = "/ua/multiapps/multiClock/widgets/custom-menu-item/custom-menu-item.ui")]
+    [GtkTemplate (ui = "/ua/inf/multiapps/multiClock/widgets/custom-menu-item/custom-menu-item.ui")]
     public class CustomMenuItem : Gtk.Widget {
         [GtkChild]
         private unowned Gtk.Label prefix;

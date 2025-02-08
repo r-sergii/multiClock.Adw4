@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
-  <gresource prefix="/ua/multiapps/multiClock">
+  <gresource prefix="/ua/inf/multiapps/multiClock">
     <file>windows/main_window/main_window.ui</file>
     <file>windows/towns_window/towns_window.ui</file>
     <file>windows/language_window/language_window.ui</file>

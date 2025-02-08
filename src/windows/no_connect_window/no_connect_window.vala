@@ -7,7 +7,7 @@ namespace Multiclock {
 //        private CircularProgressWidgets.CircularProgressBar pbar;
 
         public NoConnectWindow (Gtk.Application app) {
-            Object (application: app);
+            Object (application: app, default_width: 320);
         }
 
         construct{

@@ -12,23 +12,23 @@ namespace Multiclock {
             listVisible = new Gee.ArrayList<bool> ();
 
             string[] svg = {
-                "/ua/multiapps/multiClock/image/flag_new_zealand.svg",
-                "/ua/multiapps/multiClock/image/flag_australia.svg",
+                "/ua/inf/multiapps/multiClock/image/flag_new_zealand.svg",
+                "/ua/inf/multiapps/multiClock/image/flag_australia.svg",
 
-                "/ua/multiapps/multiClock/image/flag_japan.svg",
-                "/ua/multiapps/multiClock/image/flag_south_korea.svg",
-                "/ua/multiapps/multiClock/image/flag_china.svg",
-                "/ua/multiapps/multiClock/image/flag_hong_kong.svg",
-                "/ua/multiapps/multiClock/image/flag_singapore.svg",
+                "/ua/inf/multiapps/multiClock/image/flag_japan.svg",
+                "/ua/inf/multiapps/multiClock/image/flag_south_korea.svg",
+                "/ua/inf/multiapps/multiClock/image/flag_china.svg",
+                "/ua/inf/multiapps/multiClock/image/flag_hong_kong.svg",
+                "/ua/inf/multiapps/multiClock/image/flag_singapore.svg",
 
-                "/ua/multiapps/multiClock/image/flag_germany.svg",
-                "/ua/multiapps/multiClock/image/flag_switzerland.svg",
-                "/ua/multiapps/multiClock/image/flag_uk.svg",
+                "/ua/inf/multiapps/multiClock/image/flag_germany.svg",
+                "/ua/inf/multiapps/multiClock/image/flag_switzerland.svg",
+                "/ua/inf/multiapps/multiClock/image/flag_uk.svg",
 
-                "/ua/multiapps/multiClock/image/flag_canada.svg",
-                "/ua/multiapps/multiClock/image/flag_usa.svg",
-                "/ua/multiapps/multiClock/image/flag_usa.svg",
-                "/ua/multiapps/multiClock/image/flag_usa.svg"
+                "/ua/inf/multiapps/multiClock/image/flag_canada.svg",
+                "/ua/inf/multiapps/multiClock/image/flag_usa.svg",
+                "/ua/inf/multiapps/multiClock/image/flag_usa.svg",
+                "/ua/inf/multiapps/multiClock/image/flag_usa.svg"
 
             };
 

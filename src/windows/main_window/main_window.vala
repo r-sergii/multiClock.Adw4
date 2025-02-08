@@ -1,7 +1,7 @@
 using Gtk;
 
 namespace Multiclock {
-    [GtkTemplate (ui = "/ua/multiapps/multiClock/windows/main_window/main_window.ui")]
+    [GtkTemplate (ui = "/ua/inf/multiapps/multiClock/windows/main_window/main_window.ui")]
     public class MainWindow : Gtk.ApplicationWindow {
         [GtkChild]
         private unowned Gtk.Box mainBox;//list;

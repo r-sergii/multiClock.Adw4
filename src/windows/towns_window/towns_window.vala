@@ -1,5 +1,5 @@
 namespace Multiclock {
-	[GtkTemplate (ui = "/ua/multiapps/multiClock/windows/towns_window/towns_window.ui")]
+	[GtkTemplate (ui = "/ua/inf/multiapps/multiClock/windows/towns_window/towns_window.ui")]
 	public class TownsWindow : Adw.PreferencesWindow {//Adw.ApplicationWindow {
         [GtkChild]
         unowned Gtk.Switch switch_wellington;
@@ -164,15 +164,15 @@ namespace Multiclock {
             overlay.add_toast (toast);
         }
 
-        private void alert (string heading, string body){
-            var dialog_alert = new Adw.AlertDialog(heading, body);
-            if (body != "") {
-                dialog_alert.set_body(body);
-            }
-            dialog_alert.add_response("ok", _("_OK"));
-            dialog_alert.set_response_appearance("ok", SUGGESTED);
-            dialog_alert.response.connect((_) => { dialog_alert.close(); });
-            dialog_alert.present(this);
-        }
+//        private void alert (string heading, string body){
+//            var dialog_alert = new Adw.AlertDialog(heading, body);
+  //          if (body != "") {
+    //            dialog_alert.set_body(body);
+      //      }
+        //    dialog_alert.add_response("ok", _("_OK"));
+          //  dialog_alert.set_response_appearance("ok", SUGGESTED);
+//            dialog_alert.response.connect((_) => { dialog_alert.close(); });
+  //          dialog_alert.present(this);
+//        }
 	}
 }
