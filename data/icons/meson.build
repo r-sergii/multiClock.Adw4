@@ -1,4 +1,4 @@
-application_id = 'ua.multiapps.multiClock'
+application_id = 'ua.inf.multiapps.multiClock'
 nzd_id = 'flag_new_zealand'
 aud_id = 'flag_australia'
 jpy_id = 'flag_japan'

@@ -13,8 +13,8 @@ foreach i : icon_sizes
 endforeach
 
 desktop_file = i18n.merge_file(
-  input: 'ua.multiapps.multiClock.desktop.in',
-  output: 'ua.multiapps.multiClock.desktop',
+  input: 'ua.inf.multiapps.multiClock.desktop.in',
+  output: 'ua.inf.multiapps.multiClock.desktop',
 #  input: meson.project_name () + '.desktop.in',
 #  output: meson.project_name () + '.desktop',
   type: 'desktop',
@@ -31,8 +31,8 @@ if desktop_utils.found()
 endif
 
 appstream_file = i18n.merge_file(
-  input: 'ua.multiapps.multiClock.appdata.xml.in',
-  output: 'ua.multiapps.multiClock.appdata.xml',
+  input: 'ua.inf.multiapps.multiClock.appdata.xml.in',
+  output: 'ua.inf.multiapps.multiClock.appdata.xml',
 #  input: meson.project_name () + '.appdata.xml.in',
 #  output: meson.project_name () + '.appdata.xml',
   po_dir: '../po',
@@ -50,7 +50,7 @@ appstream_file = i18n.merge_file(
 #  )
 #endif
 
-install_data('ua.multiapps.multiClock.gschema.xml',
+install_data('ua.inf.multiapps.multiClock.gschema.xml',
 #install_data(meson.project_name () + '.gschema.xml',
   install_dir: join_paths(get_option('datadir'), 'glib-2.0/schemas')
 )

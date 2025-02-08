@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="multiClock">
+	<schema id="ua.inf.multiapps.multiClock" path="/ua/inf/multiapps/multiClock/">
+	  <key name="theme" type="i">
+	    <default>2</default>
+	  </key>
+	  <key name="wellington" type="b">
+	    <default>true</default>
+	  </key>
+	  <key name="sydney" type="b">
+	    <default>true</default>
+	  </key>
+	  <key name="tokio" type="b">
+	    <default>true</default>
+	  </key>
+	  <key name="seoul" type="b">
+	    <default>true</default>
+	  </key>
+	  <key name="shanghai" type="b">
+	    <default>true</default>
+	  </key>
+	  <key name="hong-kong" type="b">
+	    <default>true</default>
+	  </key>
+	  <key name="singapore" type="b">
+	    <default>true</default>
+	  </key>
+	  <key name="frankfurt" type="b">
+	    <default>true</default>
+	  </key>
+	  <key name="zurich" type="b">
+	    <default>true</default>
+	  </key>
+	  <key name="london" type="b">
+	    <default>true</default>
+	  </key>
+	  <key name="toronto" type="b">
+	    <default>true</default>
+	  </key>
+	  <key name="new-york" type="b">
+	    <default>true</default>
+	  </key>
+	  <key name="chicago" type="b">
+	    <default>true</default>
+	  </key>
+	  <key name="san-francisco" type="b">
+	    <default>true</default>
+	  </key>
+	  <key name="locale" type="s">
+	    <default>"EN"</default>
+	  </key>
+	  <key name="loading" type="s">
+	    <default>"Loading..."</default>
+	  </key>
+	  <key name="language" type="s">
+	    <default>"Language"</default>
+	  </key>
+	  <key name="towns" type="s">
+	    <default>"Towns"</default>
+	  </key>
+	  <key name="about" type="s">
+	    <default>"About"</default>
+	  </key>
+	  <key name="quit" type="s">
+	    <default>"Quit"</default>
+	  </key>
+	  <key name="ok" type="s">
+	    <default>"Ok"</default>
+	  </key>
+	  <key name="cancel" type="s">
+	    <default>"Cancel"</default>
+	  </key>
+	  <key name="close" type="s">
+	    <default>"Close"</default>
+	  </key>
+	  <key name="choose-lang" type="s">
+	    <default>"Choose language for application"</default>
+	  </key>
+	  <key name="yes-rem" type="s">
+	    <default>"Apply your selection"</default>
+	  </key>
+	  <key name="no-rem" type="s">
+	    <default>"Undo changes"</default>
+	  </key>
+	  <key name="choose-cities" type="s">
+	    <default>"Choose cities to show"</default>
+	  </key>
+	  <key name="bad-inet" type="s">
+	    <default>"No access to the internet"</default>
+	  </key>
+	  <key name="make-connect" type="s">
+	    <default>"Make the connection and try again"</default>
+	  </key>
+	  <key name="exit" type="s">
+	    <default>"Exit"</default>
+	  </key>
+	  <key name="are-exit" type="s">
+	    <default>"Are you sure you want to exit?"</default>
+	  </key>	</schema>
+</schemalist>
