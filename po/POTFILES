@@ -1,6 +1,6 @@
-data/ua.multiapps.multiClock.desktop.in
-data/ua.multiapps.multiClock.appdata.xml.in
-data/ua.multiapps.multiClock.gschema.xml
+data/ua.inf.multiapps.multiClock.desktop.in
+data/ua.inf.multiapps.multiClock.appdata.xml.in
+data/ua.inf.multiapps.multiClock.gschema.xml
 src/windows/main_window/main_window.ui
 src/main.vala
 src/windows/main_window/main_window.vala
